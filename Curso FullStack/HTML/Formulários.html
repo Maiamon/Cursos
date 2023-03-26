@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <form action="#" method="get" target="_blank" autocomplete="off">
+
+            <h1>Cabeça</h1>
+            <p>O Formulário</p>
+            <fieldset>
+                <legend>Descrição</legend>
+                <p>
+                    <label for="nome">
+                        Nome:
+                    </label>
+                    <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+                    <label for="senha">
+                        Senha:
+                    </label>
+                    <input id="senha" name="senha" type="password" placeholder="Sua senha" required>
+
+
+                </p>
+            </fieldset><br>
+            <p>
+                <label for="sou-dev">Sou Dev</label>
+                <input type="checkbox" name="sou-dev" id="sou-dev" value="sim"><br>
+                <label for="sou-tester">Sou Tester</label>
+                <input type="checkbox" name="sou-tester" id="sou-tester" value="sim"><br>
+
+            </p>
+
+            <p>
+                Genêro:
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="masculino" value="masculino"><br>
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="feminino" value="feminino"><br>
+                <label for="outros">Outros</label>
+                <input type="radio" name="genero" id="outros" value="outros"><br>
+
+            </p>
+            <p>
+                <button type="reset">Reset</button>
+                <button type="submit">Enviar</button>
+            </p>
+
+        </form>
+    </section>
+</body>
+
+</html>
