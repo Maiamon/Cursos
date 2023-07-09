@@ -1,0 +1,5 @@
+## INSTALL
+
+- docker
+- php
+- Compose
