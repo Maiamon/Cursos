@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: gray;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tabuleiro {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pretas {
+  background-color: black;
+  height: 100px;
+  width: 100px;
+}
+
+.brancas {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+}
