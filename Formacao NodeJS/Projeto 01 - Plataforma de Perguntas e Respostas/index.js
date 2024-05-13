@@ -1,5 +1,18 @@
 import  express  from "express";
 import bodyParser from "body-parser";
+import connection from './database/database.js'
+import Pergunta from './database/Pergunta.js'
+
+//Database
+
+connection.authenticate()
+    .then(() => {
+        console.log('Conexão estabelecida com sucesso.');
+    })
+    .catch(err => {
+        console.error('Erro ao conectar ao banco de dados:', err);
+    });
+
 
 const app = express();
 const porta = 8080
@@ -43,7 +56,12 @@ app.get('/perguntar', (req,res) => {
 app.post("/savequestion", (req, res) => {
     var titulo = req.body.titulo
     var descricao = req.body.descricao
-    res.send("Formulario recebido! Titulo: "+ titulo + " descrição: " + descricao);
+    Pergunta.create({
+        titulo: titulo,
+        descricao: descricao
+    }).then(() => {
+        res.redirect('/')
+    })
 });
 
 app.listen(porta, ()=>{console.log("App rodando na porta "+ porta)})
