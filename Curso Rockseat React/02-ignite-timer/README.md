@@ -16,6 +16,29 @@ pnpm i @rocketseat/eslint-config -D
 
 pnpm i react-router-dom
 
+
+## Instalando phosphor-react
+
+pnpm i phosphor-react
+
+## Instalando React HookForm
+
+pnpm i react-hook-form
+
+## Instalando ZOD para validação de Formulário
+
+pnpm i zod
+
+pnpm i @hookform/resolvers
+
+## Instalando date-fns
+
+pnpm i date-fns
+
+## Instalando ImmerJS
+
+pnpm i immer
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
